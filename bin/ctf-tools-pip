@@ -37,6 +37,7 @@ if [[ -z "${VIRTUAL_ENV+x}" || "$VIRTUAL_ENV" != "$VE_DIR" ]]; then
     if [[ -n "${VIRTUAL_ENV+x}" ]]; then
         echo "virtual env output" >&2
 	echo "${VIRTUAL_ENV}" >&2
+	cat "${VIRTUAL_ENV}/bin/activate" >&2
 	echo "test" >&2
         deactivate
     fi
