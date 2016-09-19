@@ -1,4 +1,4 @@
 #!/bin/bash -e
 echo "===" >&2
 env >&2
-ctf-tools-pip3 install --upgrade 'git+https://github.com/ALSchwalm/foresight.git'
+ctf-tools-pip install --upgrade 'git+https://github.com/ALSchwalm/foresight.git'
