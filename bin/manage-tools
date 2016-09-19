@@ -244,6 +244,7 @@ case $ACTION in
 		if env DISTRI=$DISTRI ./install >>install.log 2>&1
 		then
 			tool_log "install finished"
+			cat install.log >&2
 		else
 			tool_log "INSTALL FAILED"
 			cat install.log >&2
