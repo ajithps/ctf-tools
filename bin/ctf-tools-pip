@@ -33,14 +33,6 @@ if [[ ! -d "$VE_DIR" || ! -e "$VE_DIR/bin/activate" ]]; then
     virtualenv --system-site-packages -p "$PY_INTERPRETER"  "$VE_DIR"
 fi
 
-if [[ -z "${VIRTUAL_ENV+x}" || "$VIRTUAL_ENV" != "$VE_DIR" ]]; then
-    if [[ -n "${VIRTUAL_ENV+x}" ]]; then
-    	env >&2
-    	type deactivate >&2
-	echo "test" >&2
-        deactivate
-    fi
-    source "$VE_DIR/bin/activate"
-fi
+source "$VE_DIR/bin/activate"
 
 exec pip "$@"
