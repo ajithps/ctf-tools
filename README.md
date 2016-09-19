@@ -1,5 +1,5 @@
 # ctf-tools
-[![Build Status](https://travis-ci.org/zardus/ctf-tools.svg?branch=master)](https://travis-ci.org/zardus/ctf-tools)
+[![Build Status](https://travis-ci.org/ajithps/ctf-tools.svg?branch=master)](https://travis-ci.org/ajithps/ctf-tools)
 [![IRC](https://img.shields.io/badge/freenode-%23ctf--tools-green.svg)](http://webchat.freenode.net/?channels=#ctf-tools)
 
 This is a collection of setup scripts to create an install of various security research tools.
